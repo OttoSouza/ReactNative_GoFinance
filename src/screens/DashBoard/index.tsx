@@ -215,7 +215,7 @@ export default function DashBoard() {
                 </User>
               </UserInfo>
               <LogoutButton onPress={signOut}>
-                <Icon name="power" />
+                <Icon name="log-out" />
               </LogoutButton>
             </UserWrapper>
           </Header>

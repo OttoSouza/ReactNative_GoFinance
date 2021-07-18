@@ -1,12 +1,12 @@
 import React from 'react';
-import { View , Platform} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { Platform} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Dashboard from "../screens/DashBoard"
-import Register from "../screens/Register"
 import { useTheme } from 'styled-components';
 import { MaterialIcons } from '@expo/vector-icons';
-import Resume from '../screens/Resume/index';
+import DashBoard from '../../screens/DashBoard';
+import Register from '../../screens/Register';
+import Resume from '../../screens/Resume';
+
 const {Navigator, Screen} = createBottomTabNavigator();
 
 const AppRoutes: React.FC = () => {
@@ -21,7 +21,7 @@ const AppRoutes: React.FC = () => {
         height: 88
       }
     }}>
-      <Screen name="Listagem" component={Dashboard} options={{
+      <Screen name="Listagem" component={DashBoard} options={{
         tabBarIcon: (({size, color}) => <MaterialIcons size={size} color={color} name="format-list-bulleted"/>)
       }}/>
       <Screen name="Cadastrar" component={Register} options={{

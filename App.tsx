@@ -13,7 +13,9 @@ import {
 import AppLoading from "expo-app-loading";
 import { StatusBar } from "react-native";
 import { AuthProvider, useAuth } from "./src/hooks/auth";
-import Routes from "./src/routes/index";
+
+import Routes from "./src/hooks/routes";
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
